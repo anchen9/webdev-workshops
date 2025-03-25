@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../static/styles.css" />
+    <title>My Grocery List</title>
+  </head>
+  <body>
+    <h1>Grocery List</h1>
+    <p>Here are some lists of groceries that I need to buy</p>
+
+    <div class="lists-container">
+      <div id="costco-list" class="grocery-list">
+        <h3>Costco</h3>
+        <ol id="costco-items">
+          <li>eggs</li>
+          <li class="emphasized-text">bacon</li>
+          <li>rice</li>
+        </ol>
+      </div>
+      <div id="walmart-list" class="grocery-list">
+        <h3>Walmart</h3>
+        <ol id="walmart-items">
+          <li class="emphasized-text">pencils</li>
+          <li>erasers</li>
+          <li>tape</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="form-outer">
+      <h3>Add an Item</h3>
+      <form id="groceryForm">
+        <div class="inputs-container">
+          <div class="input-container">
+            <label for="store">Store Name:</label>
+            <input type="text" id="store" name="store" required />
+          </div>
+
+          <div class="input-container">
+            <label for="item">Item Name:</label>
+            <input type="text" id="item" name="item" required />
+          </div>
+        </div>
+
+        <button type="submit">Add Item</button>
+      </form>
+      <p id="message"></p>
+    </div>
+
+    <script src="../static/script.js"></script>
+  </body>
+</html>
