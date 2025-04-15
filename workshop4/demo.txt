@@ -1,0 +1,36 @@
+Workshop 4's demo:
+
+Github Demo:
+
+Initializing a github repo:
+
+- open a new terminal
+- navigate to a folder you want to place the local repo in.
+- run (git init)
+- run (git clone <repo url>)
+
+
+Adding new branches: 
+- run (git branch <branch name>)
+- run (git switch <branch name>)
+- run (git push -u origin <branch name>)
+- make your changes ex. adding a new file, modifying lines
+- run (git add .)
+- run (git commit -m "message")
+- run (git push)
+
+now, switch back to the main branch using:
+- git switch main
+
+then, merge your new branch to main:
+- run (git merge <branch name>)
+- solve any merge conflicts
+- run (git push origin main)
+
+
+Deployment Demo: 
+- log in/sign up to Vercel
+- link your github account to Vercel
+- Click Add New project --> Import --> select your github repo
+- Click deploy 
+- Congrats! your link is now live!!
